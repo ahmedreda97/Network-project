@@ -91,24 +91,36 @@ namespace HTTPServer
                 //TODO: map the relativeURI in request to get the physical path of the resource.
                 string relativePath = request.relativeURI;
                 //TODO: check for redirect
-                string path=GetRedirectionPagePathIFExist(relativePath);
+                string path = GetRedirectionPagePathIFExist(relativePath);
                 //TODO: check file exists
-              
+                if (!File.Exists(path))
+                {
+                    string fileName = Configuration.NotFoundDefaultPageName;
+                    return new Response(StatusCode.NotFound, "text/html",File.ReadAllText(fileName), fileName);
+                }
                 //TODO: read the physical file
-
+                 content = File.ReadAllText(path);
                 // Create OK response
+                
+                return new Response(StatusCode.OK, "text/html", content, path);
             }
             catch (Exception ex)
             {
                 // TODO: log exception using Logger class
+                Logger.LogException(ex);
+                string fileName = Configuration.InternalErrorDefaultPageName;
                 // TODO: in case of exception, return Internal Server Error. 
+                return new Response(StatusCode.InternalServerError, "text/html", File.ReadAllText(fileName),fileName);
             }
         }
 
         private string GetRedirectionPagePathIFExist(string relativePath)
         {
             // using Configuration.RedirectionRules return the redirected page path if exists else returns empty
-            
+            if (Configuration.RedirectionRules.ContainsKey(relativePath))
+            {
+                return Configuration.RedirectionRules[relativePath];
+            }
             return string.Empty;
         }
 
@@ -116,9 +128,17 @@ namespace HTTPServer
         {
             string filePath = Path.Combine(Configuration.RootPath, defaultPageName);
             // TODO: check if filepath not exist log exception using Logger class and return empty string
-            
+            try
+            {
+                return File.ReadAllText(filePath);
+            }
+            catch(Exception ex)
+            {
+                Logger.LogException(ex);
+                return string.Empty;
+            }
             // else read file and return its content
-            return string.Empty;
+            
         }
 
         private void LoadRedirectionRules(string filePath)
