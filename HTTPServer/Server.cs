@@ -87,9 +87,9 @@ namespace HTTPServer
             try
             {
                 //TODO: check for bad request 
-                request.ParseRequest();
+                bool status=request.ParseRequest();
                 //TODO: map the relativeURI in request to get the physical path of the resource.
-                string relativePath = request.relativeURI;
+                string relativePath = request.relativeURI; //maybe wrong
                 //TODO: check for redirect
                 string path = GetRedirectionPagePathIFExist(relativePath);
                 //TODO: check file exists
@@ -143,14 +143,23 @@ namespace HTTPServer
 
         private void LoadRedirectionRules(string filePath)
         {
+            string line;
             try
             {
+                StreamReader sr = new StreamReader(filePath);
                 // TODO: using the filepath paramter read the redirection rules from file 
+                while((line = sr.ReadLine()) != null)
+                {
+                    string[] splited = line.Split(',');
+                    Configuration.RedirectionRules.Add(splited[0], splited[1]);
+                }
                 // then fill Configuration.RedirectionRules dictionary 
+                
             }
             catch (Exception ex)
             {
                 // TODO: log exception using Logger class
+                Logger.LogException(ex);
                 Environment.Exit(1);
             }
         }
