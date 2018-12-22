@@ -1,0 +1,266 @@
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:03:46 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:03:58 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:09:41 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:10:35 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:11:02 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:12:01 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:12:10 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:13:40 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:15:01 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:15:38 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:16:10 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:17:59 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:18:30 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:19:38 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:19:52 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:20:01 PM
+System.IO.IOException: The process cannot access the file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRules.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:21:16 PM
+System.IO.FileNotFoundException: Could not find file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRuless.txt'.
+File name: 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRuless.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:23:17 PM
+System.IO.FileNotFoundException: Could not find file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRuless.txt'.
+File name: 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\redirectionRuless.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 156 12/22/2018 5:23:24 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 66
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:24:19 PM
+System.IO.FileNotFoundException: Could not find file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\InternalError.html'.
+File name: 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\InternalError.html'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 120
+   at HTTPServer.Server.HandleConnection(Object obj) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 66 12/22/2018 5:24:19 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 66
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:26:46 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 66
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:26:46 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 66
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:27:23 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 66
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:27:23 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 63
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:28:49 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 63
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:28:49 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:29:19 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:29:19 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:30:01 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:30:01 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:31:32 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 84
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:31:32 PM
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 72
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:53:07 PM
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 72
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:53:07 PM
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 69
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:55:26 PM
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 69
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 91 12/22/2018 5:55:26 PM
+System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at HTTPServer.Request.LoadHeaderLines() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 186
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 108
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 92 12/22/2018 6:06:04 PM
+System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at HTTPServer.Request.LoadHeaderLines() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 186
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 108
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 92 12/22/2018 6:06:04 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at HTTPServer.Request.LoadHeaderLines() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 187
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 109
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 92 12/22/2018 6:13:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at HTTPServer.Request.LoadHeaderLines() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 187
+   at HTTPServer.Request.ParseRequest() in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Request.cs:line 109
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 92 12/22/2018 6:13:42 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.GetRedirectionPagePathIFExist(String relativePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 128
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 101 12/22/2018 6:19:42 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.GetRedirectionPagePathIFExist(String relativePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 128
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 101 12/22/2018 6:19:43 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 162 12/22/2018 6:20:44 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 162 12/22/2018 6:20:53 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 162 12/22/2018 6:21:24 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 162 12/22/2018 6:21:26 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 162 12/22/2018 6:22:10 PM
+System.IO.FileNotFoundException: Could not find file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\aboutus.html'.
+File name: 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\aboutus.html'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 110 12/22/2018 6:24:39 PM
+System.IO.FileNotFoundException: Could not find file 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\aboutus.html'.
+File name: 'C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\bin\Debug\aboutus.html'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at HTTPServer.Server.HandleRequest(Request request) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 110 12/22/2018 6:24:47 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at HTTPServer.Server.LoadRedirectionRules(String filePath) in C:\Users\AhmedReda\Documents\GitHub\Network-project\HTTPServer\Server.cs:line 168 12/22/2018 7:00:04 PM

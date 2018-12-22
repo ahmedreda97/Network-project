@@ -21,7 +21,7 @@ namespace HTTPServer
 
     class Request
     {
-        string[] requestLines;
+        List<string> requestLines = new List<string>();
         RequestMethod method;
         public string relativeURI;
         Dictionary<string, string> headerLines;
@@ -32,10 +32,10 @@ namespace HTTPServer
         }
 
         HTTPVersion httpVersion;
-        string requestString;
-        string[] contentLines;
-        string[] r_lines;
-        string[] header_lines;
+        string requestString = null;
+        List<string> contentLines = new List<string>();
+        List<string> r_lines = new List<string>();
+        List<string> header_lines = new List<string>();
         public Request(string requestString)
         {
             this.requestString = requestString;
@@ -60,10 +60,13 @@ namespace HTTPServer
                 {
                     if (crlf_count >= 1 && stop == false)
                     {
-                        header_lines[header_count] = request_line;
+                        //header_lines[header_count] = request_line;
+                        header_lines.Add(request_line);
+                        request_line = null;
                         header_count++;
                     }
-                    r_lines[crlf_count] = request_line;
+                    //r_lines[crlf_count] = request_line;
+                    r_lines.Add(request_line);
                     crlf_count++;
                     i++;
                     if (requestString[i] == '\r' && requestString[i + 1] == '\n')
@@ -81,7 +84,8 @@ namespace HTTPServer
             int count = 0;
             foreach (var x in split)
             {
-                requestLines[count] = x;
+                //requestLines[count] = x;
+                requestLines.Add(x);
                 count++;
             }
             bool parserequestline = ParseRequestLine();
@@ -135,15 +139,15 @@ namespace HTTPServer
                 relativeURI = requestLines[1];
             }
 
-            if (requestLines[2] == "HTTP/1.0")
+            if (requestLines[2] == "HTTP/1.0\r")
             {
                 httpVersion = HTTPVersion.HTTP10;
             }
-            else if (requestLines[2] == "HTTP/1.1")
+            else if (requestLines[2] == "HTTP/1.1\r")
             {
                 httpVersion = HTTPVersion.HTTP11;
             }
-            else if (requestLines[2] == "HTTP/0.9" || requestLines[2] == "HTTP")
+            else if (requestLines[2] == "HTTP/0.9\r" || requestLines[2] == "HTTP\r")
             {
                 httpVersion = HTTPVersion.HTTP09;
             }
@@ -164,14 +168,14 @@ namespace HTTPServer
             //  throw new NotImplementedException();
             if (httpVersion == HTTPVersion.HTTP11)
             {
-                if (header_lines.Contains("Host") == false)
+                if (header_lines[0].Contains("Host") == false)
                 {
                     return false;
                 }
             }
             headerLines = new Dictionary<string, string>();
             string[] Separators = new string[] { ": " };
-            for (int i = 0; i < header_lines.Count(); i++)
+            for (int i = 0; i < header_lines.Count()-1; i++)
             {
                 string[] split = header_lines[i].Split(Separators, StringSplitOptions.None);
                 headerLines.Add(split[0], split[1]);

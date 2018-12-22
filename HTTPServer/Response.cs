@@ -28,14 +28,17 @@ namespace HTTPServer
         }
         StatusCode code;
         List<string> headerLines = new List<string>();
-        public Response(StatusCode code, string contentType, string content, string redirectoinPath)
+        public Response(StatusCode code, string contentType, string content, string redirectionPath)
         {
             //throw new NotImplementedException();
             // TODO: Add headlines (Content-Type, Content-Length,Date, [location if there is redirection])
             headerLines.Add("Content-Type:" + "text/html");
             headerLines.Add("Content-Length:" + (content.Length).ToString());
             headerLines.Add("Date:" + (DateTime.UtcNow).ToString("F"));
-            headerLines.Add(redirectoinPath);
+            if (redirectionPath != null)
+            {
+                headerLines.Add("Location:" + redirectionPath);
+            }
 
             // TODO: Create the request string
             responseString = string.Empty;
@@ -58,7 +61,7 @@ namespace HTTPServer
 
             statusLine += Configuration.ServerHTTPVersion;
             statusLine += " ";
-            statusLine += code.ToString();
+            statusLine += ((int)code).ToString();
             statusLine += " ";
 
             if (code == StatusCode.OK)

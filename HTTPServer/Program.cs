@@ -28,7 +28,7 @@ namespace HTTPServer
         static void CreateRedirectionRulesFile()
         {
             // TODO: Create file named redirectionRules.txt
-            File.Create("redirectionRules.txt");
+            //File.Create("redirectionRules.txt");
            
             // each line in the file specify a redirection rule
             // example: "aboutus.html,aboutus2.html"
