@@ -30,7 +30,7 @@ namespace HTTPServer
         List<string> headerLines = new List<string>();
         public Response(StatusCode code, string contentType, string content, string redirectoinPath)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             // TODO: Add headlines (Content-Type, Content-Length,Date, [location if there is redirection])
             headerLines.Add("Content-Type:" + "text/html");
             headerLines.Add("Content-Length:" + (content.Length).ToString());
@@ -38,7 +38,9 @@ namespace HTTPServer
             headerLines.Add(redirectoinPath);
 
             // TODO: Create the request string
+            responseString = string.Empty;
             responseString = GetStatusLine(code);
+            responseString += "\r\n";
             foreach (string s in headerLines)
             {
                 responseString += s;
@@ -55,7 +57,9 @@ namespace HTTPServer
             string statusLine = string.Empty;
 
             statusLine += Configuration.ServerHTTPVersion;
+            statusLine += " ";
             statusLine += code.ToString();
+            statusLine += " ";
 
             if (code == StatusCode.OK)
                 statusLine += "OK";
