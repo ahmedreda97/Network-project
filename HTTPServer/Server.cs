@@ -84,10 +84,16 @@ namespace HTTPServer
         {
             //throw new NotImplementedException();
             string content;
+            string fileName;
             try
             {
                 //TODO: check for bad request 
                 bool status=request.ParseRequest();
+                if (status == false)
+                {
+                    fileName = Configuration.BadRequestDefaultPageName;
+                    return new Response(StatusCode.BadRequest, "text/html", File.ReadAllText(fileName), fileName);
+                }
                 //TODO: map the relativeURI in request to get the physical path of the resource.
                 string relativePath = request.relativeURI; //maybe wrong
                 //TODO: check for redirect
@@ -95,7 +101,7 @@ namespace HTTPServer
                 //TODO: check file exists
                 if (!File.Exists(path))
                 {
-                    string fileName = Configuration.NotFoundDefaultPageName;
+                    fileName = Configuration.NotFoundDefaultPageName;
                     return new Response(StatusCode.NotFound, "text/html",File.ReadAllText(fileName), fileName);
                 }
                 //TODO: read the physical file
@@ -108,7 +114,7 @@ namespace HTTPServer
             {
                 // TODO: log exception using Logger class
                 Logger.LogException(ex);
-                string fileName = Configuration.InternalErrorDefaultPageName;
+                fileName = Configuration.InternalErrorDefaultPageName;
                 // TODO: in case of exception, return Internal Server Error. 
                 return new Response(StatusCode.InternalServerError, "text/html", File.ReadAllText(fileName),fileName);
             }
