@@ -32,9 +32,20 @@ namespace HTTPServer
         {
             throw new NotImplementedException();
             // TODO: Add headlines (Content-Type, Content-Length,Date, [location if there is redirection])
-
+            headerLines.Add("Content-Type:" + "text/html");
+            headerLines.Add("Content-Length:" + (content.Length).ToString());
+            headerLines.Add("Date:" + (DateTime.UtcNow).ToString("F"));
+            headerLines.Add(redirectoinPath);
 
             // TODO: Create the request string
+            responseString = GetStatusLine(code);
+            foreach (string s in headerLines)
+            {
+                responseString += s;
+                responseString += "\r\n";
+            }
+            responseString += "\r\n";
+            responseString += content;
 
         }
 
@@ -42,6 +53,20 @@ namespace HTTPServer
         {
             // TODO: Create the response status line and return it
             string statusLine = string.Empty;
+
+            statusLine += Configuration.ServerHTTPVersion;
+            statusLine += code.ToString();
+
+            if (code == StatusCode.OK)
+                statusLine += "OK";
+            else if (code == StatusCode.NotFound)
+                statusLine += "Not Found";
+            else if (code == StatusCode.InternalServerError)
+                statusLine += "Internal Server Error";
+            else if (code == StatusCode.BadRequest)
+                statusLine += "Bad Request";
+            else
+                statusLine += "Redirect";
 
             return statusLine;
         }
