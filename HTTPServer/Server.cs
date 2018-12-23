@@ -91,7 +91,12 @@ namespace HTTPServer
             {
                 //TODO: check for bad request 
                 bool status = request.ParseRequest();
-                if (status == false)
+                Console.Write(request.method.ToString());
+                if (request.method.ToString() == "HEAD" && status == false)
+                {
+                    return new Response(StatusCode.BadRequest, "text/html", "", "");
+                }
+                else if (status == false)
                 {
                     fileName = Configuration.BadRequestDefaultPageName;
                     return new Response(StatusCode.BadRequest, "text/html", File.ReadAllText(Configuration.RootPath + '\\' + fileName), fileName);
@@ -100,29 +105,49 @@ namespace HTTPServer
                 string relativePath = request.relativeURI;
                 //TODO: check for redirect
                 string redPath = GetRedirectionPagePathIFExist(relativePath);
-                if (redPath != string.Empty)
+                if (request.method.ToString() == "HEAD" && redPath != string.Empty)
+                {
+                    return new Response(StatusCode.Redirect, "text/html", "", "");
+                }
+                else if (redPath != string.Empty)
                 {
                     fileName = Configuration.RedirectionDefaultPageName;
 
                     return new Response(StatusCode.Redirect, "text/html", File.ReadAllText(Configuration.RootPath + '\\' + fileName), redPath);
                 }
-                if (relativePath == "/")
+                if (request.method.ToString() == "HEAD" && relativePath == "/")
+                {
+                    return new Response(StatusCode.OK, "text/html", "", "");
+                }
+                else if (relativePath == "/")
                 {
                     fileName = "main.html";
                     return new Response(StatusCode.OK, "text/html", File.ReadAllText(Configuration.RootPath + '\\' + fileName), null);
                 }
                 //TODO: check file exists
-                if (!File.Exists(Configuration.RootPath+'\\'+ relativePath))
+                if (request.method.ToString() == "HEAD" && !File.Exists(Configuration.RootPath + '\\' + relativePath))
+                {
+                    return new Response(StatusCode.NotFound, "text/html", "", "");
+                }
+                else if (!File.Exists(Configuration.RootPath+'\\'+ relativePath))
                 {
                     //aa
                     fileName = Configuration.NotFoundDefaultPageName;
                     return new Response(StatusCode.NotFound, "text/html",File.ReadAllText(Configuration.RootPath + '\\' + fileName), null);
                 }
-                //TODO: read the physical file
-                 content = File.ReadAllText(Configuration.RootPath + '\\' + relativePath);
-                // Create OK response
+
+                if (request.method.ToString() == "HEAD" )
+                {
+                    return new Response(StatusCode.OK, "text/html", "", "");
+                }
+                else
+                {
+                    //TODO: read the physical file
+                    content = File.ReadAllText(Configuration.RootPath + '\\' + relativePath);
+                    // Create OK response
+                    return new Response(StatusCode.OK, "text/html", content, relativePath);
+                }
                 
-                return new Response(StatusCode.OK, "text/html", content, relativePath);
             }
             catch (Exception ex)
             {

@@ -22,7 +22,7 @@ namespace HTTPServer
     class Request
     {
         List<string> requestLines = new List<string>();
-        RequestMethod method;
+        public RequestMethod method;
         public string relativeURI;
         Dictionary<string, string> headerLines;
 
