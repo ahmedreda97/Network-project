@@ -26,7 +26,6 @@ namespace HTTPServer
                 return responseString;
             }
         }
-        StatusCode code;
         List<string> headerLines = new List<string>();
         public Response(StatusCode code, string contentType, string content, string redirectionPath)
         {

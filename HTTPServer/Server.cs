@@ -74,6 +74,7 @@ namespace HTTPServer
                 catch (Exception ex)
                 {
                     Logger.LogException(ex);
+                    break;
                 }
             }
 

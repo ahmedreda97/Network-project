@@ -52,6 +52,8 @@ namespace HTTPServer
             //int header_count = 0;
             bool stop = false;
             string request_line = "";
+            string content = "";
+            int content_size = 0;
             // check that there is atleast 3 lines: Request line, Host Header, Blank line (usually 4 lines with the last empty line for empty content)
             for (int i = 0; i < requestString.Count(); i++)
             {
@@ -64,7 +66,6 @@ namespace HTTPServer
                         header_lines.Add(request_line);
                         request_line = null;
                     }
-
                     r_lines.Add(request_line);
                     crlf_count++;
                     i++;
@@ -92,7 +93,38 @@ namespace HTTPServer
             {
                 return false;
             }
+
+            if (method == RequestMethod.POST)
+            {
+                // get the length of the content in case of POST request
+                foreach (var header in header_lines)
+                {
+                    if (header.Contains("Content-Length") || header.ToLower().Contains("content-length"))
+                    {
+                        string[] selectedHeader = header.Split(':');
+                        string temp = selectedHeader[selectedHeader.Count() - 1].Trim().ToString();
+                        content_size = int.Parse(temp);
+                    }
+                }
+
+                string newRequestString = string.Empty;
+                for (int s = 0; s < requestString.Count(); s++)
+                {
+                    if (s < requestString.Count() - content_size)
+                    {
+                        newRequestString += requestString[s];
+                    }
+                    else
+                    {
+                        content += requestString[s];
+                    }
+                }
+
+                this.requestString = newRequestString;
+            }
+
             // Validate blank line exists
+            Console.Write(content);
             bool blank_lines = ValidateBlankLine();
             if (blank_lines == false)
             {
@@ -167,7 +199,7 @@ namespace HTTPServer
             //  throw new NotImplementedException();
             if (httpVersion == HTTPVersion.HTTP11)
             {
-                if (header_lines[0].Contains("Host") == false)
+                if (!containsHead())
                 {
                     return false;
                 }
@@ -202,6 +234,20 @@ namespace HTTPServer
             }
 
             return true;
+        }
+        private bool containsHead()
+        {
+            
+            foreach(string val in header_lines)
+            {
+                if (val.Contains("Host"))
+                {
+                    return true;
+                }
+
+            }
+            return false;
+
         }
 
     }
