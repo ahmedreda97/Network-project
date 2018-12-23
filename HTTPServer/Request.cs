@@ -49,31 +49,32 @@ namespace HTTPServer
             // throw new NotImplementedException();
             //TODO: parse the receivedRequest using the \r\n delimeter   
             int crlf_count = 0;
-            int header_count = 0;
+            //int header_count = 0;
             bool stop = false;
             string request_line = "";
             // check that there is atleast 3 lines: Request line, Host Header, Blank line (usually 4 lines with the last empty line for empty content)
             for (int i = 0; i < requestString.Count(); i++)
             {
-                request_line += requestString[i];
+
                 if (requestString[i] == '\r' && requestString[i + 1] == '\n')
                 {
                     if (crlf_count >= 1 && stop == false)
                     {
-                        //header_lines[header_count] = request_line;
+
                         header_lines.Add(request_line);
                         request_line = null;
-                        header_count++;
                     }
-                    //r_lines[crlf_count] = request_line;
+
                     r_lines.Add(request_line);
                     crlf_count++;
                     i++;
+                    request_line = null;
                     if (requestString[i] == '\r' && requestString[i + 1] == '\n')
                     {
                         stop = true;
                     }
                 }
+                request_line += requestString[i];
             }
             if (!(crlf_count >= 3))
             {
@@ -81,12 +82,10 @@ namespace HTTPServer
             }
             // Parse Request line
             string[] split = r_lines[0].Split(' ');
-            int count = 0;
             foreach (var x in split)
             {
                 //requestLines[count] = x;
                 requestLines.Add(x);
-                count++;
             }
             bool parserequestline = ParseRequestLine();
             if (parserequestline == false)
@@ -139,15 +138,15 @@ namespace HTTPServer
                 relativeURI = requestLines[1];
             }
 
-            if (requestLines[2] == "HTTP/1.0\r")
+            if (requestLines[2] == "HTTP/1.0")
             {
                 httpVersion = HTTPVersion.HTTP10;
             }
-            else if (requestLines[2] == "HTTP/1.1\r")
+            else if (requestLines[2] == "HTTP/1.1")
             {
                 httpVersion = HTTPVersion.HTTP11;
             }
-            else if (requestLines[2] == "HTTP/0.9\r" || requestLines[2] == "HTTP\r")
+            else if (requestLines[2] == "HTTP/0.9" || requestLines[2] == "HTTP")
             {
                 httpVersion = HTTPVersion.HTTP09;
             }
@@ -175,7 +174,7 @@ namespace HTTPServer
             }
             headerLines = new Dictionary<string, string>();
             string[] Separators = new string[] { ": " };
-            for (int i = 0; i < header_lines.Count()-1; i++)
+            for (int i = 0; i < header_lines.Count() - 1; i++)
             {
                 string[] split = header_lines[i].Split(Separators, StringSplitOptions.None);
                 headerLines.Add(split[0], split[1]);
